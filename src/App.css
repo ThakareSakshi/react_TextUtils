@@ -2,7 +2,8 @@
   /* text-align: center; */
   display: flex;
   flex-direction: column;
-  gap:20px;
+  gap:10px;
+  
  
 }
 .Header{
@@ -10,7 +11,10 @@
   display: flex ;
   justify-content: space-between;
   align-items: center;
-  background-color: grey;
+  background-color: rgba(128, 128, 128, 0.656);
+  /* width: 100%; */
+  /* position:sticky; */
+  top:0;
 }
 .Header ul{
   display: flex;
@@ -24,15 +28,25 @@
 }
 textarea{
   padding:10px;
+  margin:20px;
+  background-color: rgba(128, 128, 128, 0.256);
+  color:inherit
 }
 
 button{
-  padding:5px 20px;
+  padding:10px 20px;
   border-radius: 5px;
   color:white;
   background-color: chocolate;
   border:none;
   outline:none;
   margin:5px 10px;
+  cursor: pointer;
+  text-transform: capitalize;
+}
+button:hover{
+  background-color: gray;
+  color:black;
+  border:1px solid rgb(92, 90, 90);
 }
 

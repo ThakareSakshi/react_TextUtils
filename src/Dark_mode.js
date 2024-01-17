@@ -14,6 +14,14 @@ const Dark_mode = () => {
       const newMode = !isDarkMode;
       setIsDarkMode(newMode);
       localStorage.setItem('darkMode', newMode);
+      if(newMode){
+        document.body.style.backgroundColor="black";
+        document.body.style.color="white";
+        
+      }else{
+        document.body.style.backgroundColor="white";
+        document.body.style.color="black";
+      }
     };
   
     return (
